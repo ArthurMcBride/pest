@@ -5,7 +5,7 @@
   composer = "Devin Gonzales"
   poet = "Gregory Gonzales"
   copyright = "2017"
-  tagline = ##f
+  tagline = v.0.20171109.1
 }
 
 global = {
@@ -80,15 +80,15 @@ classicalGuitar = \relative c' {
 
 right = \relative c'' {
 \global
-%changed first 8 measures to dotted half 
+%changed first 8 measures to dotted half and quater notes
   e2. c4 |%m1
   g2. b4 |%m2
   e,2. g4 |%m3
   b2. c4 |%m4
   b2. d4 |%m5
-  f,2. a4 |%m6
-  g2. fis4 |%m7
-  g2. b4 |%m8
+  <c, f>2<c a'>  |%m6
+  <d b'>2. fis4 |%m7
+  <g d'>2. b4 |%m8
   f2 c |%m9
   bes2 d |%m10
   bes4 d e2 |%m11
@@ -105,14 +105,14 @@ right = \relative c'' {
 
 left = \relative c' {
 \global
-  c,2 a' |%1
+  r2 a |%1
   e2 g |%m2
   c,2 e |%m3
   g,2 a |%m4
   g2 b |%m5
   d2 f |%m6
-  r1 |%m7
-  r1 |%m8
+  g,2 g'|%m7
+  b,2 d |%m8
   e2 a, |%m9
   g4 a bes2 |%m10
   e bes |%m11
