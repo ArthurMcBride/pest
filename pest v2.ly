@@ -4,7 +4,7 @@
   title = "Pest"
   composer = "Devin Gonzales"
   poet = "Gregory Gonzales"
-  copyright = "v.0.20171110.1"
+  copyright = "v.0.20171116.2"
   tagline = ##f
 }
 
@@ -50,15 +50,15 @@ tenorVoice = \relative c' {
 
 verse = \lyricmode {
   % Lyrics follow here.
-  I'm a  lo -- ner,  not rec -- luse 
-  I have no  ex -- o -- ske -- le -- ton 
+  I'm a  lo -- ner,  not rec -- luse
+  I have no  ex -- o -- ske -- le -- ton
   if you flick me a -- cross the room
   I won't crawl a -- way un -- scathed
   I nev -- er fright -- ened you
   by just show -- ing up
   scur -- ry -- ing from
   be -- hind an
-  
+
 }
 
 classicalGuitar = \relative c' {
