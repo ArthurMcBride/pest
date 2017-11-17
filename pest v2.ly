@@ -25,26 +25,40 @@ tenorVoice = \relative c' {
   r1 |%m6
   r1 |%m7
   r1 |%m8
-  r2 r4 d, |%m9
-  a'2 g4 e4 |%m10
-  f2 g4 bes |%m11
+  r2 d,4 a'|%m9
+  g2 e |%m10
+  e2 g4 bes |%m11
   r4 c d bes |%m12
   g2 f2 |%m13
-  d2 f4 r4|%m14
-  r2 a4 bes |%m15
+  d4. e8 f4 r4|%m14
+  r4 a2 bes4 |%m15
   d4 c8 bes a g a4 |%m16
   r1 |%m17
-  r2 a4 bes |%m18
-  d4 c8 bes a g~g4 |%m19
+  r2 a2  |%m18
+  d4 c8 bes a g a4 |%m19
+  r1 |%m20
+  r1 |%m21
+  f2 e4 f |%m22
+  a2 bes |%m23
+  c2. r4  |%m24
+  r2 a4 g |%m25
+  f a c2  |%m26
+  a4 bes8 g f4 r4 |%m27
+  a4 c2 bes4
+
 }
 
 verse = \lyricmode {
   % Lyrics follow here.
-  I'm a lo -- ner, not rec -- luse
-  I have no exo -- ske -- le -- ton
+  I'm a  lo -- ner,  not rec -- luse 
+  I have no  ex -- o -- ske -- le -- ton 
   if you flick me a -- cross the room
   I won't crawl a -- way un -- scathed
-
+  I nev -- er fright -- ened you
+  by just show -- ing up
+  scur -- ry -- ing from
+  be -- hind an
+  
 }
 
 classicalGuitar = \relative c' {
@@ -81,7 +95,7 @@ classicalGuitar = \relative c' {
    d,1 |%15
 }>>
    e''4 d4 c2 |%m16
-   <<{a1 |%m17
+   <<{a2 f |%m17
    fis1|%m18
     }\\{
    f,1 |%m17
@@ -91,11 +105,24 @@ classicalGuitar = \relative c' {
   <<{a1 |%m20
     r8 d f d r8 d f d|%m21
     r8 a c a r8 a c a |%m22
+    r8 d f d r8 d f d |%m23
+    r8 a c a r8 a c a |%m24
+    r8 d f d r8 d f d |%m25
+    r8 a c a r8 a c a |%m26
+    r8 d f d r8 d f d |%m27
+    r8 a c a r8 a c a |%m28
     }\\{
     f,1 |%m20
-    d'2 a2 |%m21
+    d2 a'2 |%m21
     f2 a2 |%22
+    e2 a2 |%m23
+    f2 a2 |%m24
+    c2 e,2 |%m25
+    d2 a'2 |%m26
+    f2 a2 |%m27
+    d,2 a'2 |%m28
 }>>
+
 }
 
 right = \relative c'' {
@@ -124,12 +151,20 @@ right = \relative c'' {
     \break
   c1 |%m17
   %test repeating last three measures
-  fis,1 |%m18
-  c'2 c~ |%m19
+  fis1 |%m18
+  c2 c~ |%m19
   c1 |%m20
     \break
-  d1 |%m21
-
+  <d' f,>1 |%m21 needs work going forward
+  <f, c'>1 |%m22
+  <d' f,>1 |%m23
+  <f, c'>1 |%m24
+    \break
+  <f c'>1 |%m25
+  <f d'>1 |%m26
+  <f c'>1 |%m27
+  <f d'>1 |%m28
+    \break
 
 }
 
@@ -152,14 +187,19 @@ left = \relative c' {
   d2. g,4 |%m15
   a2 bes4 a |%m16
   f1 |%m17
-  %%test repeating last three measures
   d'2. g,4 |%m18
   a2 bes4 a |%m19
   f1 |%m20
-  d2 f4 g |%m18
-  a2 g4 f |%m19
-  e2 f4 g |%m20
-
+  d2 f4 g |%m21
+  a2 g4 f |%m22
+  e2 f4 g |%m23
+    %test baseline
+  a2 c4 a |%m24
+  c2 a4 f |%m25
+  d2 f4 g |%m26
+  a2 g4 f |%m27
+    %start repeat from measure 21
+  d2 f4 g |%m28
   }
 
 tenorVoicePart = \new Staff \with {
