@@ -4,7 +4,7 @@
   title = "Pest"
   composer = "Devin Gonzales"
   poet = "Gregory Gonzales"
-  copyright = "v.0.20171116.2"
+  copyright = "v.1.20171129.1"
   tagline = ##f
 }
 
@@ -42,10 +42,23 @@ tenorVoice = \relative c' {
   a2 bes |%m23
   c2. r4  |%m24
   r2 a4 g |%m25
-  f a c2  |%m26
+  f4 a c2  |%m26
   a4 bes8 g f4 r4 |%m27
-  a4 c2 bes4
-
+  a4 c2 bes4 |%m28
+  %test measure(s)
+  a4 g f a |%m29
+  r1 |%m30
+  a4 g8 f g4 a4 |%m31
+  f8 e f a a4 f |%m32
+  r4 d e f |%m33
+  f8 g f g a2 |%m34
+  f4 a2 r4 |%m35
+  f4 e8 f a2 |%m36
+  a8 g f g a2 |%m37
+  f4 e8 f a2 |%m38
+  a8 g f g a2 |%m39
+  g4 f e e |%40
+  f2 d |%41
 }
 
 verse = \lyricmode {
@@ -57,7 +70,17 @@ verse = \lyricmode {
   I nev -- er fright -- ened you
   by just show -- ing up
   scur -- ry -- ing from
-  be -- hind an
+  be -- hind an emp -- ty bot -- tle
+  though you used to crawl
+  in -- to my bed at night
+  en -- twin -- ing
+  as if in a shared co -- coon
+  now if I call
+  you feel like a swarm
+  now if I call
+  you feel like a swarm
+  and just want to
+  swat me
 
 }
 
@@ -115,12 +138,27 @@ classicalGuitar = \relative c' {
     f,1 |%m20
     d2 a'2 |%m21
     f2 a2 |%22
-    e2 a2 |%m23
+    d,2 a'2 |%m23
     f2 a2 |%m24
     c2 e,2 |%m25
     d2 a'2 |%m26
     f2 a2 |%m27
     d,2 a'2 |%m28
+    <f  a' c>4<f a' c><f a'c><f a' c> |%m29
+    <f a' d>4<f a' d><f a' d><f a' d> |%30
+    <f  a' c>4<f a' c><f a'c><f a' c> |%m31
+    <f a' d>4<f a' d><f a' d><f a' d> |%m32
+    <f  a' c>4<f a' c><f a'c><f a' c> |%m33
+    <f a' d>4<f a' d><f a' d><f a' d> |%m34
+    <f  a' c>4<f a' c><f a'c><f a' c> |%m35
+    <d a'' d>1 |%m36
+    <f a' c>1 |%m37
+    <d a'' d>1 |%m38
+    <f a' c>1 |%m39
+    <a a'cis>1 |%m40
+    <d a' d>1 |%m41
+
+
 }>>
 
 }
@@ -132,40 +170,54 @@ right = \relative c'' {
   e2. c4 |%m1
   g2. b4 |%m2
   e,2. g4 |%m3
-  b2. c4 |%m4
     \break
+  b2. c4 |%m4
   b2. d4 |%m5
   <c, f>2<c a'>  |%m6
   <d b'>2. fis4 |%m7
-  <g d'>2. b4 |%m8
     \break
+  <g d'>2. b4 |%m8
   f2 c |%m9
   bes2 d |%m10
   bes4 d e2 |%m11
-  d2. e4 |%m12
     \break
+  d2. e4 |%m12
   a2 f |%m13
   a2 c |%m14
   fis,1 |%m15
-  c2 c~ |%m16
     \break
+  c2 c~ |%m16
   c1 |%m17
-  %test repeating last three measures
   fis1 |%m18
   c2 c~ |%m19
-  c1 |%m20
     \break
-  <d' f,>1 |%m21 needs work going forward
+  c1 |%m20
+  <d' f,>1 |%m21 
   <f, c'>1 |%m22
   <d' f,>1 |%m23
-  <f, c'>1 |%m24
     \break
+  <f, c'>1 |%m24
   <f c'>1 |%m25
   <f d'>1 |%m26
   <f c'>1 |%m27
-  <f d'>1 |%m28
     \break
-
+  <f d'>1 |%m28
+   c'2. a4 |%m29
+   d2 a4 bes |%m30
+   c2 a |%m31
+    \break
+   d2 a4. bes8 |%m32
+   c2 a |%m33
+   d2 a4. bes8 |%m34
+   c2 a |%m35
+    \break
+   <a d>1 |%m36
+   <f c'>1 |%m37
+   <a d>1 |%m38
+   <f c'>1 |%m39
+     \break
+   <e a> |%m40  
+   <f d'> |%m41
 }
 
 left = \relative c' {
@@ -200,7 +252,22 @@ left = \relative c' {
   a2 g4 f |%m27
     %start repeat from measure 21
   d2 f4 g |%m28
-  }
+  %2017-11-20 laundry sesion
+  <f c'>1 |%m29
+  <a f'>1 |%m30
+  <f c'>1 |%m31
+  <a f'>1 |%m32
+  <f c'>1 |%m33
+  <a f'>1 |%m34
+  <f c'>1 |%m35
+  <d' a'>1 |%m36
+  <a f'>1 |%m37
+  <d a'>1 |%m38
+  <a f'>1 |%m39
+  <cis a'> |%m40
+  <d a'>|%m41
+  
+}
 
 tenorVoicePart = \new Staff \with {
   instrumentName = "Tenor"
