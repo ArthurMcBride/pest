@@ -29,7 +29,7 @@ tenorVoice = \relative c' {
   g2 e |%m10
   e2 g4 bes |%m11
   r4 c d bes |%m12
-  g2 f2 |%m13
+  g2 f2 |%m13 flip the G in beat one with the A from the piano right hand to make a smoother melody.
   d4. e8 f4 r4|%m14
   r4 a2 bes4 |%m15
   d4 c8 bes a g a4 |%m16
@@ -45,7 +45,6 @@ tenorVoice = \relative c' {
   f4 a c2  |%m26
   a4 bes8 g f4 r4 |%m27
   a4 c2 bes4 |%m28
-  %test measure(s)
   a4 g f a |%m29
   r1 |%m30
   a4 g8 f g4 a4 |%m31
@@ -179,7 +178,7 @@ right = \relative c'' {
   <g d'>2. b4 |%m8
   f2 c |%m9
   bes2 d |%m10
-  bes4 d e2 |%m11
+  bes4 d e2 |%m11 check harmony on this beat
     \break
   d2. e4 |%m12
   a2 f |%m13
@@ -192,7 +191,7 @@ right = \relative c'' {
   c2 c~ |%m19
     \break
   c1 |%m20
-  <d' f,>1 |%m21 
+  <d' f,>1 |%m21
   <f, c'>1 |%m22
   <d' f,>1 |%m23
     \break
@@ -216,7 +215,7 @@ right = \relative c'' {
    <a d>1 |%m38
    <f c'>1 |%m39
      \break
-   <e a> |%m40  
+   <e a> |%m40
    <f d'> |%m41
 }
 
@@ -250,9 +249,7 @@ left = \relative c' {
   c2 a4 f |%m25
   d2 f4 g |%m26
   a2 g4 f |%m27
-    %start repeat from measure 21
   d2 f4 g |%m28
-  %2017-11-20 laundry sesion
   <f c'>1 |%m29
   <a f'>1 |%m30
   <f c'>1 |%m31
@@ -266,7 +263,7 @@ left = \relative c' {
   <a f'>1 |%m39
   <cis a'> |%m40
   <d a'>|%m41
-  
+
 }
 
 tenorVoicePart = \new Staff \with {
