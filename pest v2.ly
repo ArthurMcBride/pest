@@ -4,7 +4,7 @@
   title = "Pest"
   composer = "Devin Gonzales"
   poet = "Gregory Gonzales"
-  copyright = "v.1.20171129.1"
+  copyright = "v.2.20171206.1"
   tagline = ##f
 }
 
@@ -25,39 +25,39 @@ tenorVoice = \relative c' {
   r1 |%m6
   r1 |%m7
   r1 |%m8
-  r2 d,4 a'|%m9
+  r2 d,4 \( a'|%m9
   g2 e |%m10
-  e2 g4 bes |%m11
-  r4 c d bes |%m12
-  g2 f2 |%m13 flip the G in beat one with the A from the piano right hand to make a smoother melody.
-  d4. e8 f4 r4|%m14
-  r4 a2 bes4 |%m15
-  d4 c8 bes a g a4 |%m16
+  e2 g4 bes \) |%m11
+  r4 c \( d bes |%m12
+  a2 f2 |%m13 
+  d4. e8 f4 \) r4|%m14
+  r4 a2 \( bes4 |%m15
+  d4 c8 bes a g a4 \) |%m16
   r1 |%m17
-  r2 a2  |%m18
-  d4 c8 bes a g a4 |%m19
+  r2 a2 \( |%m18
+  d4 c8 bes a g a4 \) |%m19
   r1 |%m20
   r1 |%m21
-  f2 e4 f |%m22
+  f2 \( e4 f |%m22
   a2 bes |%m23
-  c2. r4  |%m24
-  r2 a4 g |%m25
-  f4 a c2  |%m26
+  c2. \) r4  |%m24
+  r2 a4 \( g |%m25
+  f4 a c2 \) |%m26
   a4 bes8 g f4 r4 |%m27
-  a4 c2 bes4 |%m28
-  a4 g f a |%m29
+  a4 \( c2 bes4 |%m28
+  a4 g f a \) |%m29
   r1 |%m30
   a4 g8 f g4 a4 |%m31
   f8 e f a a4 f |%m32
   r4 d e f |%m33
   f8 g f g a2 |%m34
   f4 a2 r4 |%m35
-  f4 e8 f a2 |%m36
-  a8 g f g a2 |%m37
-  f4 e8 f a2 |%m38
-  a8 g f g a2 |%m39
-  g4 f e e |%40
-  f2 d |%41
+  f4 ^\( e8 f a2 |%m36
+  a8 g f g a2 \) |%m37
+  f4 ^\( e8 f a2 |%m38
+  a8 g f g a2 \) |%m39
+  g4 ^\( f e e |%40
+  f2 d \) |%41
 }
 
 verse = \lyricmode {
@@ -91,19 +91,19 @@ classicalGuitar = \relative c' {
   r8  a d a f' a, d a |%m3
   r8 a d a e' a, d a |%m4
   r8 a d a e' a, d a |%m5
-  r8 a d a f' a, d a |%m6
+  r8 a  d a f' a, d a |%m6
   r8 g b g fis' g, b g |%m7
   r8 g b g g' g, b g |%m8
     }\\{
-  a,1 |%m2
+  a,1 \mf |%m2
   a1 |%m3
   e1 |%m4
   e1 |%m5
   a1 |%m6
   g1 |%m7
-  g1
-}>> |%m8}
-  d'2 e4 bes4 |%m9
+  g1  |%m8
+}>> 
+  d'2 \mf e4 bes4 |%m9
   < g bes' > 2 < bes g' > |%m10
   < e, g' > 2 bes''4 a |%m11
   < bes, d' > 2 < d bes' > |%m12
@@ -123,7 +123,7 @@ classicalGuitar = \relative c' {
    f,1 |%m17
    d1 |%m18
 }>>
-  e''4 d c2 |%m19
+  e''4 \mf d c2 |%m19
   <<{a1 |%m20
     r8 d f d r8 d f d|%m21
     r8 a c a r8 a c a |%m22
@@ -154,8 +154,8 @@ classicalGuitar = \relative c' {
     <f a' c>1 |%m37
     <d a'' d>1 |%m38
     <f a' c>1 |%m39
-    <a a'cis>1 |%m40
-    <d a' d>1 |%m41
+    <a a'cis>1 \mp |%m40
+    <d a' d>1 \p |%m41
 
 
 }>>
@@ -164,31 +164,30 @@ classicalGuitar = \relative c' {
 
 right = \relative c'' {
 \global
-%changed first 8 measures to dotted half and quater notes
 %all bar breaks in this voice
-  e2. c4 |%m1
-  g2. b4 |%m2
+  e2. \p c4 |%m1
+  g2. \mf b4 |%m2
   e,2. g4 |%m3
     \break
   b2. c4 |%m4
   b2. d4 |%m5
-  <c, f>2<c a'>  |%m6
+  <c, f>2 \cresc <c a'>|%m6
   <d b'>2. fis4 |%m7
     \break
-  <g d'>2. b4 |%m8
-  f2 c |%m9
+  <g d'>2.\! \f b4 |%m8
+  f2 \mf c |%m9
   bes2 d |%m10
-  bes4 d e2 |%m11 check harmony on this beat
+  bes4 d e2 |%m11
     \break
   d2. e4 |%m12
-  a2 f |%m13
+  g2 f |%m13
   a2 c |%m14
   fis,1 |%m15
     \break
   c2 c~ |%m16
   c1 |%m17
-  fis1 |%m18
-  c2 c~ |%m19
+  fis1 \f |%m18
+  c2 \mf c~ |%m19
     \break
   c1 |%m20
   <d' f,>1 |%m21
@@ -210,13 +209,13 @@ right = \relative c'' {
    d2 a4. bes8 |%m34
    c2 a |%m35
     \break
-   <a d>1 |%m36
+   <a d>1 \f |%m36
    <f c'>1 |%m37
    <a d>1 |%m38
    <f c'>1 |%m39
      \break
-   <e a> |%m40
-   <f d'> |%m41
+   <e a> \mp |%m40
+   <f d'> \p \bar "|." |%m41
 }
 
 left = \relative c' {
