@@ -4,7 +4,7 @@
   title = "Pest"
   composer = "Devin Gonzales"
   poet = "Gregory Gonzales"
-  copyright = "v.2.20171206.1"
+  copyright = "v.3.20171210.3"
   tagline = ##f
 }
 
@@ -13,7 +13,6 @@ global = {
   \time 4/4
   \tempo 4 = 110
 }
-
 tenorVoice = \relative c' {
 \global
 \dynamicUp
@@ -29,7 +28,7 @@ tenorVoice = \relative c' {
   g2 e |%m10
   e2 g4 bes \) |%m11
   r4 c \( d bes |%m12
-  a2 f2 |%m13 
+  a2 f2 |%m13
   d4. e8 f4 \) r4|%m14
   r4 a2 \( bes4 |%m15
   d4 c8 bes a g a4 \) |%m16
@@ -47,11 +46,13 @@ tenorVoice = \relative c' {
   a4 \( c2 bes4 |%m28
   a4 g f a \) |%m29
   r1 |%m30
-  a4 g8 f g4 a4 |%m31
-  f8 e f a a4 f |%m32
-  r4 d e f |%m33
-  f8 g f g a2 |%m34
-  f4 a2 r4 |%m35
+  a4. ^\( g8 f4 g |%m31
+  a2 f4 e |%m32
+  d4 f g a~ |%m33
+  a4 \) r4 r2 |%m34
+  f4 ^\( e8 f a2 |%m35
+  g4 a8 f d2 |%m3?
+  d4 f \) r2 |%m3?
   f4 ^\( e8 f a2 |%m36
   a8 g f g a2 \) |%m37
   f4 ^\( e8 f a2 |%m38
@@ -61,7 +62,6 @@ tenorVoice = \relative c' {
 }
 
 verse = \lyricmode {
-  % Lyrics follow here.
   I'm a  lo -- ner,  not rec -- luse
   I have no  ex -- o -- ske -- le -- ton
   if you flick me a -- cross the room
@@ -80,7 +80,6 @@ verse = \lyricmode {
   you feel like a swarm
   and just want to
   swat me
-
 }
 
 classicalGuitar = \relative c' {
@@ -102,14 +101,12 @@ classicalGuitar = \relative c' {
   a1 |%m6
   g1 |%m7
   g1  |%m8
-}>> 
-  d'2 \mf e4 bes4 |%m9
-  < g bes' > 2 < bes g' > |%m10
-  < e, g' > 2 bes''4 a |%m11
-  < bes, d' > 2 < d bes' > |%m12
-  < f, a' > 2 < a f' > |%m13
-%two voices start again
-%testing repeat of measures 15-17
+}>>
+  d'2 \mf c4 bes4 |%m9
+  <g bes'>2<bes g'> |%m10
+  <e, g'>2 bes''4 a |%m11
+  <bes, d'>2<d bes'> |%m12
+  <f, a'>2<a f'> |%m13
 <<{r4 c' a e |%m14
    fis1 |%m15
     }\\{
@@ -124,42 +121,41 @@ classicalGuitar = \relative c' {
    d1 |%m18
 }>>
   e''4 \mf d c2 |%m19
-  <<{a1 |%m20
-    r8 d f d r8 d f d|%m21
-    r8 a c a r8 a c a |%m22
-    r8 d f d r8 d f d |%m23
-    r8 a c a r8 a c a |%m24
-    r8 d f d r8 d f d |%m25
-    r8 a c a r8 a c a |%m26
-    r8 d f d r8 d f d |%m27
-    r8 a c a r8 a c a |%m28
+<<{a1 |%m20
+  r8 d f d r8 d f d|%m21
+  r8 a c a r8 a c a |%m22
+  r8 d f d r8 d f d |%m23
+  r8 a c a r8 a c a |%m24
+  r8 d f d r8 d f d |%m25
+  r8 a c a r8 a c a |%m26
+  r8 d f d r8 d f d |%m27
+  r8 a c a r8 a c a |%m28
     }\\{
-    f,1 |%m20
-    d2 a'2 |%m21
-    f2 a2 |%22
-    d,2 a'2 |%m23
-    f2 a2 |%m24
-    c2 e,2 |%m25
-    d2 a'2 |%m26
-    f2 a2 |%m27
-    d,2 a'2 |%m28
-    <f  a' c>4<f a' c><f a'c><f a' c> |%m29
-    <f a' d>4<f a' d><f a' d><f a' d> |%30
-    <f  a' c>4<f a' c><f a'c><f a' c> |%m31
-    <f a' d>4<f a' d><f a' d><f a' d> |%m32
-    <f  a' c>4<f a' c><f a'c><f a' c> |%m33
-    <f a' d>4<f a' d><f a' d><f a' d> |%m34
-    <f  a' c>4<f a' c><f a'c><f a' c> |%m35
-    <d a'' d>1 |%m36
-    <f a' c>1 |%m37
-    <d a'' d>1 |%m38
-    <f a' c>1 |%m39
-    <a a'cis>1 \mp |%m40
-    <d a' d>1 \p |%m41
-
-
-}>>
-
+  f,1 |%m20
+  d2 a'2 |%m21
+  f2 a2 |%22
+  d,2 a'2 |%m23
+  f2 a2 |%m24
+  c2 a2 |%m25
+  d,2 a'2 |%m26
+  f2 a2 |%m27
+  d,2 a'2 |%m28
+  <f a' c>4<f a' c><f a'c><f a' c> |%m29
+  <f a' d>4<f a' d><f a' d><f a' d> |%30
+  <f a' c>4<f a' c><f a'c><f a' c> |%m31
+  <f a' d>4<f a' d><f a' d><f a' d> |%m32
+  <f a' c>4<f a' c><f a'c><f a' c> |%m33
+  <f a' d>4<f a' d><f a' d><f a' d> |%m34
+  <f a' c>4<f a' c><f a'c><f a' c> |%m35
+  <f a' d>4<f a' d><f a' d><f a' d> |%m3?
+  <f a' c>4<f a' c><f a' c><f a'c> |%m3?
+  <d a'' d>1 |%m36
+  <f a' c>1 |%m37
+  <d a'' d>1 |%m38
+  <f a' c>1 |%m39
+  <a a'cis>1 \mp |%m40
+  <d a' d>1 \p |%m41
+  }>>
 }
 
 right = \relative c'' {
@@ -209,11 +205,13 @@ right = \relative c'' {
    d2 a4. bes8 |%m34
    c2 a |%m35
     \break
+    d2. a4 |%m3?
+    c2. a4 |%m3?
    <a d>1 \f |%m36
    <f c'>1 |%m37
+    \break
    <a d>1 |%m38
    <f c'>1 |%m39
-     \break
    <e a> \mp |%m40
    <f d'> \p \bar "|." |%m41
 }
@@ -243,7 +241,6 @@ left = \relative c' {
   d2 f4 g |%m21
   a2 g4 f |%m22
   e2 f4 g |%m23
-    %test baseline
   a2 c4 a |%m24
   c2 a4 f |%m25
   d2 f4 g |%m26
@@ -256,13 +253,14 @@ left = \relative c' {
   <f c'>1 |%m33
   <a f'>1 |%m34
   <f c'>1 |%m35
+  <a f'>1 |%m3?
+  <f c'>1 |%m3?
   <d' a'>1 |%m36
   <a f'>1 |%m37
   <d a'>1 |%m38
   <a f'>1 |%m39
   <cis a'> |%m40
   <d a'>|%m41
-
 }
 
 tenorVoicePart = \new Staff \with {
